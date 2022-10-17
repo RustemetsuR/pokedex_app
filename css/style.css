@@ -42,6 +42,10 @@ input,select, button{
     border-radius: 6px;
 }
 
+input::placeholder,select::placeholder{
+    color: black;
+}
+
 select{
     padding: 9px;
 }

@@ -9,6 +9,10 @@
     flex: 1 1 auto;
 }
 
+.main-content-block__per-page-input{
+    width: 75px;
+}
+
 .pokemon-card {
     position: relative;
     width: 30%;
