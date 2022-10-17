@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/background_types.css">
+    <link rel="stylesheet" href="./css/main_page.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a class="header__logo-link" href="index.html">
+                        <h1 class="header__logo">
+                            Pokemon Searching
+                        </h1>
+                    </a>
+                    <nav class="header__nav">
+                        <a class="header__nav-item" href="index.html">Search</a>
+                        <a class="header__nav-item" href="favorite_pokemons_page.html">Favorites</a>
+                    </nav>
+                    <div class="header__burger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="main-content-block">
+            <div class="container">
+                <div class="main-content-block__inner">
+                    <div class="main-content-block__input-block">
+                        <h2 class="page-title">Search for Pokemons!</h2>
+                        <div class="main-content-block__inputs">
+                            <input 
+                                class="main-content-block__search-input" 
+                                id="main-content-block__search-input"
+                                placeholder="Pokemon"
+                                onchange="searchPokemon(this.value)"
+                                >
+                            <select 
+                                class="main-content-block__order-select" id="main-content-block__order-select"
+                                onchange="changeOrder()">
+                                <option value="Asc" selected>Asc</option>
+                                <option value="Desc">Desc</option>
+                            </select>
+                            <input 
+                                class="main-content-block__per-page-input"
+                                id="main-content-per-page-input"
+                                placeholder="Per page"
+                                type="number"
+                                min="10"
+                                max="100"
+                                value="50"
+                                onchange="changeMaximumListItems()"
+                            >
+                        </div>
+                    </div>
+                    <div class="main-content-block__pokemon-list-block" id="pokemon-list-block">
+                    </div>
+                    <div class="pagination-block">
+                        <button 
+                            class="pagination-block__button pagination-block__to-prev-page-button" 
+                            disabled
+                            onclick="toFirstPage()">
+                            <img class="pagination-block__button-img" src="./svg/arrow-first.svg">
+                        </button>
+                        <button 
+                            class="pagination-block__button pagination-block__to-prev-page-button" 
+                            disabled
+                            onclick="toPreviousPage()">
+                            <img class="pagination-block__button-img" src="./svg/arrow-left.svg">
+                        </button>
+                        <input 
+                                class="main-content-block__pagination-input" 
+                                id="main-content-block__pagination-input"
+                                type="number"
+                                min="1"
+                                readonly
+                                onchange="toSpecificPage()"
+                               >
+                        <button
+                            class="pagination-block__button pagination-block__to-next-page-button" 
+                            onclick="toNextPage()">
+                            <img class="pagination-block__button-img" src="./svg/arrow-right.svg">
+                        </button>
+                        <button 
+                            class="pagination-block__button pagination-block__to-next-page-button" 
+                            onclick="toLastPage()">
+                            <img class="pagination-block__button-img" src="./svg/arrow-last.svg">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <h2>Footer</h2>
+            </div>
+        </footer>
+    </div>
+    <script src="./DEFAULT_VARIABLES.js"></script>
+    <script src="./scripts/pagination.js"></script>
+    <script src="./scripts/main_page.js"></script>
+    <script>document.getElementById('main-content-per-page-input').value = pokemonLimit;</script>
+</body>
+
+</html>
