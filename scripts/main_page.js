@@ -52,7 +52,7 @@ const displayCards = (array = pokemonArr) => {
                     <a class="pokemon-card__link" id="pokemon-card__link" href="pokemon_info.html?${pokemon.id}">
                         <img 
                             class="pokemon-card__img" 
-                            src=${pokemon.sprites.front_default !== null ? pokemon.sprites.front_default : "../img/pokeball.png"}
+                            src=${pokemon.sprites.front_default !== null ? pokemon.sprites.front_default : "./img/pokeball.png"}
                             style="${pokemon.sprites.front_default === null ? "padding:30px" : ""}">
                         <p class="pokemon-card__id">#${pokemon.id}</p>
                         <h3 class="pokemon-card__name">${name}</h3>
@@ -60,7 +60,7 @@ const displayCards = (array = pokemonArr) => {
                     <div class="pokemon-card__types-block">
                         ${pokemon.types.map((type) => {
                             return `<button ${document.title == "Pokemon Info" ? "disabled" : ""} onclick="searchByTypes('${type.type.name}')" class="pokemon-card__types ${type.type.name}"> 
-                                        <img class="pokemon-card__types-img" src="../img/${type.type.name}.png"/>
+                                        <img class="pokemon-card__types-img" src="./img/${type.type.name}.png"/>
                                         <p class="pokemon-card__types-name">
                                             ${nameToUpperCase(type.type.name)}
                                         </p>
