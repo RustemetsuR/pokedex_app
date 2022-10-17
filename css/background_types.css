@@ -1,0 +1,163 @@
+.pokemon-card[class*="bug"],
+.pokemon[class*="bug"]{
+    background: #91a304;
+}
+
+.pokemon-card__types[class*="bug"]{
+    background: #84c401;
+}
+
+.pokemon-card[class*="dark"],
+.pokemon[class*="dark"]{
+    background: #302f2f;
+}
+
+.pokemon-card__types[class*="dark"]{
+    background: #5b5366;
+}
+
+.pokemon-card[class*="dragon"],
+.pokemon[class*="dragon"]{
+    background: #6F35FC;
+}
+
+.pokemon-card__types[class*="dragon"]{
+    background: #2870cb;
+}
+
+.pokemon-card[class*="electric"],
+.pokemon[class*="electric"]{
+    background: #d4b203;
+}
+
+.pokemon-card__types[class*="electric"]{
+    background: #fad200;
+}
+
+.pokemon-card[class*="fairy"],
+.pokemon[class*="fairy"]{
+    background: #D685AD;
+}
+
+.pokemon-card__types[class*="fairy"]{
+    background: #f88aec;
+}
+
+.pokemon-card[class*="fighting"],
+.pokemon[class*="fighting"]{
+    background: #C22E28;
+}
+
+.pokemon-card__types[class*="fighting"]{
+    background: #e12c6a;
+}
+
+.pokemon-card[class*="fire"],
+.pokemon[class*="fire"]{
+    background: #EE8130;
+}
+
+.pokemon-card__types[class*="fire"]{
+    background: #f7983f;
+}
+
+.pokemon-card[class*="flying"],
+.pokemon[class*="flying"]{
+    background: #5a828f;
+}
+
+.pokemon-card__types[class*="flying"]{
+    background: #8aace4;
+}
+
+.pokemon-card[class*="ghost"],
+.pokemon[class*="ghost"]{
+    background: #735797;
+}
+
+.pokemon-card__types[class*="ghost"]{
+    background: #4b6bb4;
+}
+
+.pokemon-card[class*="grass"],
+.pokemon[class*="grass"]{
+    background: #4f8c56;
+}
+
+.pokemon-card__types[class*="grass"]{
+    background: #3ac049;
+}
+
+
+.pokemon-card[class*="ground"],
+.pokemon[class*="ground"]{
+    background: #E2BF65;
+}
+
+.pokemon-card__types[class*="ground"]{
+    background: #e97332;
+}
+
+.pokemon-card[class*="ice"],
+.pokemon[class*="ice"]{
+    background: #96D9D6;
+}
+
+.pokemon-card__types[class*="ice"]{
+    background: #4bd2c1;
+}
+
+
+.pokemon-card[class*="normal"],
+.pokemon[class*="normal"]{
+    background: #A8A77A;
+}
+
+.pokemon-card__types[class*="normal"]{
+    background: #929ba3;
+}
+
+.pokemon-card[class*="poison"],
+.pokemon[class*="poison"]{
+    background: #A33EA1;
+}
+
+.pokemon-card__types[class*="poison"]{
+    background: #b767cf;
+}
+
+.pokemon-card[class*="psychic"],
+.pokemon[class*="psychic"]{
+    background: #F95587;
+}
+
+.pokemon-card__types[class*="psychic"]{
+    background: #f66676;
+}
+
+.pokemon-card[class*="rock"],
+.pokemon[class*="rock"]{
+    background: #B6A136;
+}
+
+.pokemon-card__types[class*="rock"]{
+    background: #cab787;
+}
+
+.pokemon-card[class*="steel"],
+.pokemon[class*="steel"]{
+    background: #B7B7CE;
+}
+
+.pokemon-card__types[class*="steel"]{
+    background: #5a8fa3;
+}
+
+.pokemon-card[class*="water"],
+.pokemon[class*="water"]{
+    background: #6390F0;
+}
+
+.pokemon-card__types[class*="water"]{
+    background: #3394dd;
+}
